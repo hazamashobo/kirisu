@@ -261,23 +261,24 @@
 </head>
 <body>
     <header>
-        <div class="title-wrapper">
-            <h1>狭間書房</h1>
-            <p class="subtitle">Hazama Publishing</p>
-        </div>
-      <div class="search">
+       <div class="title-wrapper">
+    <h1>狭間書房</h1>
+    <p class="subtitle">Hazama Publishing</p>
+  </div>
+  <div class="search">
       <form action="https://hazamashobo.github.io/result/" method="get">
         <input type="text" id="searchInput" name="q" placeholder="キーワード入力">
         <button type="submit">検索</button>
       </form>
     </div>
-    </header>
-    <nav>
-        <a href="index.html">ホーム</a>
-        <a href="#" class="active">社員情報</a>
-        <a href="#">刊行物</a>
-        <a href="#">お問い合わせ</a>
-    </nav>
+</header>
+
+  <nav>
+    <a href="https://hazamashobo.github.io/main/index.html">ホーム</a>
+    <a href="https://hazamashobo.github.io/company/index.html">狭間書房について</a>
+    <a href="https://hazamashobo.github.io/books/index.html">刊行物</a>
+    <a href="https://hazamashobo.github.io/contact/index.html"class="active">お問い合わせ</a>
+  </nav>
     <div class="container">
         <div class="employee-number">社員番号：HS0001</div>
         <div class="content">
@@ -352,19 +353,7 @@
     <footer>
         <p>© 2025 狭間書房</p>
     </footer>
-    <script>
-        // 検索機能
-        const hiddenKeywords = [
-            {keyword: "社員名簿", url: "https://hazamashobo.github.io/meibo/"},
-            {keyword: "テスト", url: "https://www.youtube.com/watch?v=W3oN4-NVvhc"}
-        ];
-        function searchSite() {
-            const input = document.getElementById('searchInput').value.trim();
-            if(!input) return;
-            const found = hiddenKeywords.find(k=>k.keyword===input);
-            if(found) location.href = found.url;
-        }
-    </script>
+
 </body>
 </html>
         </div>
