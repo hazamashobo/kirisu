@@ -235,6 +235,22 @@
         }
         /* レスポンシブ */
         @media (max-width: 768px) {
+            
+  /* ヘッダーとナビだけ縮小 */
+  header,
+  nav {
+    transform: scale(0.85);
+    transform-origin: top center;
+  }
+
+  /* 縮小による余白ズレ補正 */
+  header {
+    margin-bottom: -20px;
+  }
+
+  nav {
+    margin-top: -10px;
+  }
   /* ===== ヘッダー ===== */
   header {
     flex-direction: column;
