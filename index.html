@@ -235,6 +235,60 @@
         }
         /* レスポンシブ */
         @media (max-width: 768px) {
+  /* ===== ヘッダー ===== */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  .search {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search input {
+    width: 70%;
+    max-width: 260px;
+  }
+
+  /* ===== 社員番号（被り防止） ===== */
+  .employee-number {
+    position: static;
+    margin: 0 auto 20px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  /* ===== 名前＋写真 ===== */
+  .name-field {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* ===== 項目レイアウト ===== */
+  .field-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .field-label {
+    min-width: auto;
+    margin-bottom: 5px;
+  }
+
+  /* ===== コンテンツ余白 ===== */
+  .content {
+    padding: 30px 16px;
+  }
+}
             .content {
                 padding: 40px 20px 20px 20px;
             }
